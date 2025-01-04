@@ -36,7 +36,7 @@
 			</thead>
 			<tbody>
 			{{foreach $users as $u}}
-				<tr id="user-{{$u.uid}}" class="{{if $u.ratioed}}blocked{{/if}}">
+				<tr id="user-{{$u.uid}}" class="{{if $u.ratioed || $u.reply_guy}}blocked{{/if}}">
 					<td></td>
 					<td><img class="avatar-nano" src="{{$u.micro}}" title="{{$u.nickname}}"></td>
 					<td><a href="{{$u.url}}" title="{{$u.nickname}}"> {{$u.name}}</a></td>
