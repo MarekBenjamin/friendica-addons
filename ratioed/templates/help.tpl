@@ -70,7 +70,9 @@
     </p>
     <h4>Replies last month</h4>
     <p>
-      This is the number of times the user posted a reply to someone any time in the last month.
+      This is the number of times the user posted a reply to someone
+      else, on a thread the user did not start, any time in the last
+      month.
     </p>
     <h4>Reply likes</h4>
     <p>
@@ -86,8 +88,8 @@
       Likes to replies are not necessarily a positive thing, but if
       the person you're replying to approves the reply, that's a very
       good sign.  Of course it's also common in a debate for neither
-      side to like the other side's comments, but the debate still can
-      be valuable.
+      side to like the other side's comments without that indicating
+      an unhealthy interaction, so interpret this statistic cautiously.
     </p>
     <h4>OP likes</h4>
     <p>
@@ -103,10 +105,10 @@
     <h4>Reply guy score</h4>
     <p>
       A <a href="https://en.wikipedia.org/wiki/Reply_guy">"reply
-      guy"</a> is a common Internet phenomenon of people (disproportionately male)
-      posting unwanted comments on other (disproportionately female)
-      people's threads, derailing the
-      conversation.  This score loosely approximates this phenomenon,
+      guy"</a> is a common Internet phenomenon of people
+      (disproportionately male) posting unwanted comments on other
+      (disproportionately female) people's threads, derailing the
+      conversation.  This score loosely quantifies this phenomenon,
       as the ratio betwen the number of replies and the sum of likes,
       respondee likes, and OP likes.  This formula gives extra weight
       to particularly relevant likes: a reply to a top-level post that
