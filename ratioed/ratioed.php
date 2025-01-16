@@ -2,7 +2,7 @@
 /**
  * Name: Ratioed
  * Description: Additional moderation user table with statistics about user behaviour
- * Version: 0.2
+ * Version: 0.3
  * Author: Matthew Exon <http://mat.exon.name>
  */
 

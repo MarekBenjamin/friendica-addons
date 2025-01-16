@@ -36,7 +36,7 @@
 			</thead>
 			<tbody>
 			{{foreach $users as $u}}
-				<tr id="user-{{$u.uid}}" class="{{if $u.ratioed}}blocked{{/if}}">
+				<tr id="user-{{$u.uid}}" class="{{if $u.ratioed || $u.reply_guy}}blocked{{/if}}">
 					<td></td>
 					<td><img class="avatar-nano" src="{{$u.micro}}" title="{{$u.nickname}}"></td>
 					<td><a href="{{$u.url}}" title="{{$u.nickname}}"> {{$u.name}}</a></td>
@@ -121,18 +121,7 @@
 					{{/foreach}}
 
 					</td>
-					<td class="text-right">
-				{{if $u.is_deletable}}
-						<a href="{{$baseurl}}/moderation/users/active/block/{{$u.uid}}?t={{$form_security_token}}" class="admin-settings-action-link" title="{{$block}}">
-							<i class="fa fa-ban" aria-hidden="true"></i>
-						</a>
-						<a href="{{$baseurl}}/moderation/users/active/delete/{{$u.uid}}?t={{$form_security_token}}" class="admin-settings-action-link" title="{{$delete}}" onclick="return confirm_delete('{{$confirm_delete}}','{{$u.name}}')">
-							<i class="fa fa-trash" aria-hidden="true"></i>
-						</a>
-				{{else}}
-						&nbsp;
-				{{/if}}
-					</td>
+					<td class="text-right"></td>
 				</tr>
 			{{/foreach}}
 			</tbody>
